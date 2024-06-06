@@ -1,1 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+	margin: 40px;
+	background-color: #f2eeed;
+}
 
+h1 {
+	color: black;
+	font-size: 40px;
+	font-family: sedan;
+}
+h2 {
+	color: black;
+	font-size: 25px;
+	font-family: noto-sans;
+}
+h3 {
+	color: #00828f;
+	font-size: 25px;
+	font-family: Noto Sans;
+}
+h4 {
+	color: #707070;
+	font-size: 20px;
+	font-family: noto-sans;
+}
+#button_1 {
+	color: #00828f;
+	font-size: 25px;
+	font-family: Noto Sans;
+	background-color: #f2eeed;
+	border: 2px solid #00828f;
+	border-radius: 7px;
+	padding: 5px;
+	margin: 5px;
+}
+#button_1:hover {
+	color: #f2eeed;
+	font-size: 25px;
+	font-family: Noto Sans;
+	background-color: #00828f;
+	border: 2px solid #00828f;
+	border-radius: 7px;
+	padding: 5px;
+	margin: 5px;
+}
