@@ -156,30 +156,37 @@
 
 .item5 {
     animation-delay: calc(30s / 11 * (5 - 1) * -1);
+    background-image: url('images/ARTEVELDE_hs_logo-RGB.png');
 }
 
 .item6 {
     animation-delay: calc(30s / 11 * (6 - 1) * -1);
+    background-image: url('images/AP_logo_staand_rgb.jpg');
 }
 
 .item7 {
     animation-delay: calc(30s / 11 * (7 - 1) * -1);
+    background-image: url('images/Howest_hogeschool-logo_RGB-BLAUWLIJNTJES.jpg');
 }
 
 .item8 {
     animation-delay: calc(30s / 11 * (8 - 1) * -1);
+    background-image: url('images/Logo_Thomas_More.png');
 }
 
 .item9 {
-    animation-delay: calc(30s / 11 * (9 - 1) * -1);
+    animation-delay: calc(30s / 11 * (9 - 1) * -1); 
+    background-image: url('images/1314_logo_pxl_hogeschool.png');
 }
 
 .item10 {
     animation-delay: calc(30s / 11 * (10 - 1) * -1);
+    background-image: url('images/Odisee_Logo_Co-hogeschool.png');
 }
 
 .item11 {
     animation-delay: calc(30s / 11 * (11 - 1) * -1);
+    background-image: url('images/HOGENT_16_9_rjzsvz.png');
 }
 
 
