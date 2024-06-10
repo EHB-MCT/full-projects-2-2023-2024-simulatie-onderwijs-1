@@ -1,0 +1,185 @@
+/*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+.scrollwrapper {
+   
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto ;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+    to right
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+);
+
+}
+
+@keyframes scrollLeft {
+    to{
+        left: -200px;
+    }
+}
+
+.item {
+ 
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 6px;
+    position: absolute;
+    left: 100%;
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1 {
+    animation-delay: calc(30s / 11 * (11 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 11 * (11 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 11 * (11 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 11 * (11 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 11 * (11 - 5) * -1); 
+}
+
+.item6 {
+    animation-delay: calc(30s / 11 * (11 - 6) * -1);
+}
+
+.item7 {
+    animation-delay: calc(30s / 11 * (11 - 7) * -1);
+}
+
+.item8 { 
+    animation-delay: calc(30s / 11 * (11 - 8) * -1);
+}
+
+.item9 {
+    animation-delay: calc(30s / 11 * (11 -9) * -1);
+}
+
+.item10 {
+    animation-delay: calc(30s / 11 * (11 -10) * -1);
+}
+
+.item11 {
+    animation-delay: calc(30s / 11 * (11 -11)*-1);
+}
+
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+.scrollwrapper {
+    width: 90%;
+    max-width: 1536px;
+    margin: 5rem auto 0 auto;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -100%;
+    }
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px*11),100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-size: contain; /* Resize images to fit within the element */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+.item1 {
+    animation-delay: calc(30s / 11 * (1 - 1) * -1);
+    background-image: url('images/ehb.png'); /* URL for image 1 */
+    
+}
+
+.item2 {
+    animation-delay: calc(30s / 11 * (2 - 1) * -1);
+    background-image: url('images/images\ \(2\).png'); /* URL for image 1 */
+  
+}
+
+.item3 {
+    animation-delay: calc(30s / 11 * (3 - 1) * -1);
+    background-image: url('images/images\ \(3\).png');
+}
+
+.item4 {
+    animation-delay: calc(30s / 11 * (4 - 1) * -1);
+    background-image: url('images/Logo_H_Closed_whitespace.png');
+}
+
+.item5 {
+    animation-delay: calc(30s / 11 * (5 - 1) * -1);
+}
+
+.item6 {
+    animation-delay: calc(30s / 11 * (6 - 1) * -1);
+}
+
+.item7 {
+    animation-delay: calc(30s / 11 * (7 - 1) * -1);
+}
+
+.item8 {
+    animation-delay: calc(30s / 11 * (8 - 1) * -1);
+}
+
+.item9 {
+    animation-delay: calc(30s / 11 * (9 - 1) * -1);
+}
+
+.item10 {
+    animation-delay: calc(30s / 11 * (10 - 1) * -1);
+}
+
+.item11 {
+    animation-delay: calc(30s / 11 * (11 - 1) * -1);
+}
+
+

@@ -1,0 +1,89 @@
+.footer {
+    font-family: "Sedan", serif;
+    text-align: center;
+  }
+  
+  .footer-top {
+    background-color: #00828f;
+    padding: 20px 0;
+  }
+  
+  .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-top .footer-links ul li {
+    margin: 0 15px;
+  }
+  
+  .footer-top .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+  }
+  
+  .footer-top .footer-links ul li a:hover {
+    color: #ecf0f1;
+  }
+  
+  .footer-middle {
+    background-color: #00828f;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer-middle .footer-logo img {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-middle .footer-social a {
+    color: #f9b401;
+    margin: 0 10px;
+    font-size: 2em;  /* Changed font-size for larger icons */
+    transition: color 0.3s, transform 0.3s;  /* Added transform transition */
+  }
+  
+  .footer-middle .footer-social a:hover {
+    color: white;
+    transform: scale(1.2);  /* Added transform for icon scaling effect */
+  }
+  
+  .footer-bottom {
+    background-color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-bottom .school-logos img {
+    max-width: 100px;
+    margin: 0 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-top .footer-links ul {
+      flex-direction: column;
+    }
+  
+    .footer-top .footer-links ul li {
+      margin: 10px 0;
+    }
+  
+    .footer-middle {
+      padding: 10px 0;
+    }
+  
+    .footer-bottom .school-logos img {
+      max-width: 80px;
+      margin: 5px 10px;
+    }
+  }
+  
