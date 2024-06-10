@@ -1,11 +1,12 @@
 .footer {
-    font-family: "Sedan", serif;
+    font-family: "Noto Sans", sans-serif;
     text-align: center;
   }
   
   .footer-top {
     background-color: #00828f;
     padding: 20px 0;
+    
   }
   
   .footer-top .footer-links ul {
@@ -28,7 +29,7 @@
   }
   
   .footer-top .footer-links ul li a:hover {
-    color: #ecf0f1;
+    color: #f9b401;
   }
   
   .footer-middle {
