@@ -135,4 +135,14 @@ h4 {
 }
 .container h3 {
 	font-size: 20px;
+/* tekst moet nog in het centrum gecentreert worden*/
+}
+#logo_klein {
+	max-width: 87px;
+	max-height: 53, 5px;
+}
+#parellogram h1 {
+	font-size: 20px;
+	float: right;
+	margin-right: 30%;
 }
