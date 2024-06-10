@@ -135,7 +135,7 @@ h4 {
 }
 .container h3 {
 	font-size: 20px;
-/* tekst moet nog in het centrum gecentreert worden*/
+	/* tekst moet nog in het centrum gecentreert worden*/
 }
 #logo_klein {
 	max-width: 87px;
@@ -145,4 +145,32 @@ h4 {
 	font-size: 20px;
 	float: right;
 	margin-right: 30%;
+}
+.test-para {
+	margin: 10px;
+	width: 630px;
+	height: auto;
+	padding: 10px;
+	transform: skewx(-15deg);
+	border: #f9b401 solid 3px;
+}
+.test-para > p {
+	margin: 15px;
+	margin-top: 10px;
+	font-size: 23px;
+	position: relative;
+	float: left;
+}
+.test-para > h2 {
+	float: left;
+	color: #f9b401;
+	margin-left: 5px;
+	padding: 10px;
+	font-size: 27px;
+}
+.test-para > img {
+	float: left;
+	padding: 10px;
+	height: 48px;
+	transform: skewX(15deg);
 }
