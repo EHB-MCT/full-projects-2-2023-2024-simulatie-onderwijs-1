@@ -122,30 +122,7 @@ h4 {
 	background-image: url("home_banner.png");
 	z-index: 1;
 }
-#parellogram {
-	width: 650px;
-	height: 300px;
-	z-index: 2;
-	padding: 60px;
-	box-sizing: border-box;
-	position: relative;
-	top: -100px;
-	background: url("./../img/Middel\ 1.svg") no-repeat center center;
-	background-size: contain;
-}
-.container h3 {
-	font-size: 20px;
-	/* tekst moet nog in het centrum gecentreert worden*/
-}
-#logo_klein {
-	max-width: 87px;
-	max-height: 53, 5px;
-}
-#parellogram h1 {
-	font-size: 20px;
-	float: right;
-	margin-right: 30%;
-}
+
 .test-para {
 	margin: 10px;
 	width: 630px;
@@ -153,6 +130,11 @@ h4 {
 	padding: 10px;
 	transform: skewx(-15deg);
 	border: #f9b401 solid 3px;
+	background-color: #f2eeed;
+	z-index: 2;
+	box-sizing: border-box;
+	position: relative;
+	top: -100px;
 }
 .test-para > p {
 	margin: 15px;
@@ -160,10 +142,11 @@ h4 {
 	font-size: 23px;
 	position: relative;
 	float: left;
+	color: #00828f;
 }
 .test-para > h2 {
 	float: left;
-	color: #f9b401;
+	color: black;
 	margin-left: 5px;
 	padding: 10px;
 	font-size: 27px;
