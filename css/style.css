@@ -157,3 +157,36 @@ h4 {
 	height: 48px;
 	transform: skewX(15deg);
 }
+.flex-home {
+	display: flex;
+	margin-top: 100px;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+#home-links {
+	width: 500px;
+	height: 300px;
+}
+#home-rechts {
+	width: 500px;
+	height: 300px;
+}
+#tekst-links {
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 50px;
+}
+#tekst-links > h1 {
+	font-size: 30px;
+}
+#tekst-rechts {
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 50px;
+}
+#tekst-rechts > h1 {
+	font-size: 30px;
+}
+#button_1 {
+	margin-top: 50px;
+}
