@@ -111,7 +111,6 @@ h4 {
 	text-decoration: underline;
 	text-decoration-color: #00828f;
 }
-<<<<<<< contactStructuur
 
 /*contact css*/
 
@@ -167,7 +166,7 @@ h4 {
 
 h2 {
 	padding-left: 30px;
-=======
+}
 .container {
 	display: flex;
 	flex-direction: column;
@@ -332,20 +331,12 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(
-		to left,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logo_items {
@@ -394,5 +385,4 @@ footer {
 	text-decoration: none;
 	font-weight: bold;
 	color: white;
->>>>>>> main
 }
