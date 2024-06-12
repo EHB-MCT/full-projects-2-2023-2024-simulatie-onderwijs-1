@@ -118,7 +118,7 @@ h4 {
 	font-size: 40px;
 	margin-bottom: 0;
 	padding: 3%;
-	padding-bottom: 25px;
+	padding-bottom: 0px;
 	color: #000000;
 	text-align: center;
 }
@@ -148,6 +148,7 @@ h4 {
 	display: flex;
 	padding-top: 0px;
 	align-items: center;
+	margin-bottom: 225px;
 }
 
 .contact-info {
@@ -167,6 +168,19 @@ h4 {
 h2 {
 	padding-left: 30px;
 }
+
+.line-contact {
+	width: 10%;
+	height: 4px;
+	background-color: #f9b401;
+	margin-bottom: 25px;
+	margin-left: 770px;
+	margin-top: 0px;
+	transform: skewX(-80deg);
+}
+
+/*einde contact css*/
+
 .container {
 	display: flex;
 	flex-direction: column;
