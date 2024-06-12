@@ -197,16 +197,13 @@ th[colspan="7"]::after {
 	transform: translateX(-50%);
 	background-color: #81c0c5;
 }
-tr.calendar-header {
-}
+
 tr.calendar-header .calendar-header-day {
 	padding: 10px;
 	text-align: center;
 	color: #00828f;
 }
 
-tr.calendar-body {
-}
 tr.calendar-body .calendar-day {
 	padding: 10px 0;
 }
@@ -431,8 +428,8 @@ tr.calendar-body .calendar-day .day[disabled] {
 	background-color: #81c0c5;
 }
 
-.event-container > .event-icon > div.event-bullet-workshop,
-.event-indicator > .type-bullet > div.type-workshop {
+.event-container > .event-icon > div.event-bullet-event,
+.event-indicator > .type-bullet > div.type-event {
 	background-color: #f9b401;
 }
 
