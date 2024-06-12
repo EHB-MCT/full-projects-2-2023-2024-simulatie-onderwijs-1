@@ -39,9 +39,9 @@ h1 {
 	font-family: "Sedan", serif;
 }
 h2 {
-	color: #5a5858;
+	color: #00828f;
 	font-size: 25px;
-	font-family: "Noto Sans", sans-serif;
+	font-family: "Sedan", serif;
 }
 h3 {
 	color: #00828f;
@@ -110,4 +110,60 @@ h4 {
 .navbar ul li a:hover {
 	text-decoration: underline;
 	text-decoration-color: #00828f;
+}
+
+/*contact css*/
+
+.main-title-contact {
+	font-size: 40px;
+	margin-bottom: 0;
+	padding: 3%;
+	padding-bottom: 25px;
+	color: #000000;
+	text-align: center;
+}
+
+.contact-image img {
+	width: 75%;
+}
+
+.contact-image {
+	margin-left: 300px;
+	padding-top: 30px;
+}
+
+.contact-info p {
+	margin: 30px;
+}
+
+.email p {
+	line-height: 35px;
+}
+
+.email {
+	margin-left: 0px;
+}
+
+.contact-flex {
+	display: flex;
+	padding-top: 0px;
+	align-items: center;
+}
+
+.contact-info {
+	text-align: left;
+	width: 50%;
+	padding-left: 300px;
+}
+
+.phone {
+	margin-top: 50px;
+}
+
+.email a {
+	color: #000000;
+}
+
+h2 {
+	padding-left: 30px;
 }
