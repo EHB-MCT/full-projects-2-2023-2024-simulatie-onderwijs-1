@@ -7,49 +7,46 @@
   </head>
 	<link href="css/reset.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/createacc.css">
+
   
 </head>
 
 <body>
-    <header>  <div class="logo">
-        <img src="img/Asset 2.png" alt="NSH Logo">
-      </div>
-      <nav class="navbar">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Tips & Tricks</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="login-button">Log In</button>
+    <header>  
+        <div class="logo">
+          <img src="images/logo.png" alt="NSH Logo">
+        </div>
+        <nav class="navbar">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Tips & Tricks</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="login-button">Log In</button>
     </header>
 
-    <div class="container">
-        <h1>Login</h1>
+    <a href="login.html"><img src="images/arrow.png" class="arrow" alt="arrow"></a>
+
+
+    <div class="wrapper">
+        <h1>Create your account</h1>
         <div class="line"></div>
 
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" name="username" placeholder="Enter your username">
-            <label for="password">Password:</label>
-            <input type="password" name="password" placeholder="Enter your password">
-            <div class="signin">
-                <a href="home.html"><button class="signin-btn">Sign in</button></a>
-            </div>
-
-            <a href="#" class="forgot">Forgot password?</a>
-
-            <div class="stripe"></div>
-
-            <div class="create">
-                <a href="createacc.html"><button class="create-btn">Create your account</button></a>            
-            </div>
-
+        <form action="#">
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Re-enter password">
         </form>
+
+        <div class="createacc">
+            <a href="home.html"><button class="createacc-btn">Create</button></a>
+        </div>
     </div>
 
     <div id="footer-line-1" class="footer-lines"></div>
@@ -105,4 +102,5 @@
             </div>
         </div>
     </footer>
+    
 </body>
