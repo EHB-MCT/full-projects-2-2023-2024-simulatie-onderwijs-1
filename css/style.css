@@ -405,4 +405,11 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 100px;
+}
+.link-school {
+	text-decoration: underline;
+	color: #5a5858;
 }
