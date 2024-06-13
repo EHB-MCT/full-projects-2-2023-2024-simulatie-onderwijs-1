@@ -440,3 +440,9 @@ footer {
 	color: #5a5858;
 	flex-wrap: wrap;
 }
+#search-bar {
+	width: 15%;
+	padding: 10px;
+	margin: 20px;
+	font-size: 15px;
+}
