@@ -569,3 +569,6 @@ footer {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
+.menu-item-active {
+	border-bottom: 2px solid #f9b401;
+}
