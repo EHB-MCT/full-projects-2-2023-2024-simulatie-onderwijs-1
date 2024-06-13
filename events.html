@@ -12,19 +12,19 @@
 <body>
 	<header>
 		<div class="logo">
-			<img src="images/logo.png" alt="NSH Logo" />
+			<a href="index.html"><img src="img/logo.png" alt="NSH Logo" /></a>
 		</div>
 		<nav class="navbar">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Education</a></li>
-				<li><a href="events.html">Events</a></li>
-				<li><a href="#">Research</a></li>
-				<li><a href="#">Tips & Tricks</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li class="menu-item-active"><a href="events.html">Events</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="tips-en-tricks.html">Tips & Tricks</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
-		<button class="login-button">Log In</button>
+		<a href="login.html"><button class="login-button">Log In</button></a>
 	</header>
 
 	<div class="title">
@@ -46,7 +46,8 @@
 							id: "congres", // Event's ID (required)
 							name: "Congres", // Event name (required)
 							date: ["May/12/2025", "May/13/2025"], // Event date (required)
-							description: "Combination of plenary sessions and workshops aimed at education and the field of healthcare.",
+							description:
+								"Combination of plenary sessions and workshops aimed at education and the field of healthcare.",
 							type: "event", // Event type (required)
 							everyYear: false, // Same event every year (optional)
 						},
@@ -63,25 +64,24 @@
 
 	<script src="js/event-carousel.js"></script>
 
-	<div class="carousel">
-		<div class="carousel-1">
-			<div class="slider" id="slider-1">
+	<div id="carousel">
+		<div id="carousel-1">
+			<div class="slider">
 				<img src="images/bevalling.png" alt="birth" />
 				<img src="images/bevalling 2.png" alt="birth" />
 			</div>
 		</div>
 
-		<!--werkt niet = hapering bij eeuwig overgang-->
-		<div class="carousel-2">
-			<div class="slider" id="slider-2">
+		<!--goed verschil tussen classes en IDs behouden
+		id is voor eenmalig gebruik, classes voor meerdere gebruiken-->
+		<div id="carousel-2">
+			<div class="slider">
 				<img src="images/cpr.png" alt="cpr" />
 				<img src="images/cpr 2.png" alt="cpr" />
 			</div>
 		</div>
-
-		<!--werkt niet = hapering bij eeuwig overgang-->
-		<div class="carousel-3">
-			<div class="slider" id="slider-3">
+		<div id="carousel-3">
+			<div class="slider">
 				<img src="images/immersive.png" alt="immersive" />
 				<img src="images/immersive 2.png" alt="immersive" />
 			</div>
@@ -96,51 +96,90 @@
 	<div id="footer-line-4" class="footer-lines"></div>
 	<div id="footer-line-5" class="footer-lines"></div>
 	<div id="footer-line-6" class="footer-lines"></div>
-
 	<footer>
 		<div id="footer-menu">
 			<div id="footer-nav">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Education</a></li>
-					<li><a href="#">Events</a></li>
-					<li><a href="#">Research</a></li>
-					<li><a href="#">Tips & Tricks</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li class="menu-item-active"><a href="events.html">Events</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="tips-en-tricks.html">Tips & Tricks</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 			<div id="footer-socials">
-				<img src="images/instagram.png" />
-				<img src="images/youtube.png" />
-				<img src="images/facebook.png" />
+				<img src="img/instagram.png" />
+				<img src="img/youtube.png" />
+				<img src="img/facebook.png" />
 			</div>
 		</div>
 		<div class="logos">
 			<div class="logo_items">
-				<img src="images/1314_logo_pxl_hogeschool.png" />
-				<img src="images/ARTEVELDE_hs_logo-RGB.png" />
-				<img src="images/AP_logo_staand_rgb.jpg" />
-				<img src="images/ehb.png" />
-				<img src="images/HOGENT_16_9_rjzsvz.png" />
-				<img src="images/Howest_hogeschool-logo_RGB-BLAUWLIJNTJES.jpg" />
-				<img src="images/images (2).png" />
-				<img src="images/images (3).png" />
-				<img src="images/Logo_H_Closed_whitespace.png" />
-				<img src="images/Logo_Thomas_More.png" />
-				<img src="images/Odisee_Logo_Co-hogeschool.png" />
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/1314_logo_pxl_hogeschool.png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/ARTEVELDE_hs_logo-RGB.png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/AP_logo_staand_rgb.jpg"
+				/></a>
+				<a href="https://www.ehb.be/nl/home/"><img src="img/ehb.png" /></a>
+				<a href="https://www.hogent.be/nl/home/"
+					><img src="img/HOGENT_16_9_rjzsvz.png"
+				/></a>
+				<a href="https://www.howest.be/nl/home/"
+					><img src="img/Howest_hogeschool-logo_RGB-BLAUWLIJNTJES.jpg"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/images (2).png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/images (3).png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/Logo_H_Closed_whitespace.png"
+				/></a>
+				<a href="https://www.thomasmore.be/nl/home/"
+					><img src="img/Logo_Thomas_More.png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/Odisee_Logo_Co-hogeschool.png"
+				/></a>
 			</div>
 			<div class="logo_items">
-				<img src="images/1314_logo_pxl_hogeschool.png" />
-				<img src="images/ARTEVELDE_hs_logo-RGB.png" />
-				<img src="images/AP_logo_staand_rgb.jpg" />
-				<img src="images/ehb.png" />
-				<img src="images/HOGENT_16_9_rjzsvz.png" />
-				<img src="images/Howest_hogeschool-logo_RGB-BLAUWLIJNTJES.jpg" />
-				<img src="images/images (2).png" />
-				<img src="images/images (3).png" />
-				<img src="images/Logo_H_Closed_whitespace.png" />
-				<img src="images/Logo_Thomas_More.png" />
-				<img src="images/Odisee_Logo_Co-hogeschool.png" />
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/1314_logo_pxl_hogeschool.png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/ARTEVELDE_hs_logo-RGB.png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/AP_logo_staand_rgb.jpg"
+				/></a>
+				<a href="https://www.ehb.be/nl/home/"><img src="img/ehb.png" /></a>
+				<a href="https://www.hogent.be/nl/home/"
+					><img src="img/HOGENT_16_9_rjzsvz.png"
+				/></a>
+				<a href="https://www.howest.be/nl/home/"
+					><img src="img/Howest_hogeschool-logo_RGB-BLAUWLIJNTJES.jpg"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/images (2).png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/images (3).png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/Logo_H_Closed_whitespace.png"
+				/></a>
+				<a href="https://www.thomasmore.be/nl/home/"
+					><img src="img/Logo_Thomas_More.png"
+				/></a>
+				<a href="https://www.arteveldehogeschool.be/"
+					><img src="img/Odisee_Logo_Co-hogeschool.png"
+				/></a>
 			</div>
 		</div>
 	</footer>
