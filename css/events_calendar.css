@@ -53,7 +53,6 @@ h1 {
 	margin-bottom: 5%;
 	margin-left: 40%;
 	margin-top: -22%;
-
 	transform: skewX(-10deg);
 }
 
@@ -61,85 +60,44 @@ h1 {
 	position: absolute;
 }
 
-/*carousel 1*/
-#slider-1 img:nth-of-type(1) {
-	animation-name: fader1;
-	animation-delay: 2s;
-	animation-duration: 2s;
+/*carousel animation*/
+.slider img:nth-of-type(1) {
+	animation: fader1 5s infinite;
 	z-index: 20;
 }
 
-#slider-1 img:nth-of-type(2) {
+.slider img:nth-of-type(2) {
 	z-index: 10;
 }
 
 @keyframes fader1 {
-	from {
+	0% {
 		opacity: 1;
 	}
-	to {
+	50% {
 		opacity: 0;
 	}
-}
-
-/*carousel 2*/
-#slider-2 img:nth-of-type(1) {
-	animation-name: fader2;
-	animation-delay: 2s;
-	animation-duration: 2s;
-	z-index: 20;
-}
-
-#slider-2 img:nth-of-type(2) {
-	z-index: 10;
-}
-
-@keyframes fader2 {
-	from {
+	100% {
 		opacity: 1;
 	}
-	to {
-		opacity: 0;
-	}
 }
 
-/*carousel 3*/
-#slider-3 img:nth-of-type(1) {
-	animation-name: fader3;
-	animation-delay: 2s;
-	animation-duration: 2s;
-	z-index: 20;
-}
-
-#slider-3 img:nth-of-type(2) {
-	z-index: 10;
-}
-
-@keyframes fader3 {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-	}
-}
-
-.carousel {
+#carousel {
 	margin-bottom: 25%;
 }
 
-.carousel-1 img {
-	margin-top: 3%;
+#carousel-1 img {
+	margin-top: 2%;
 	margin-left: 22%;
 }
 
-.carousel-2 {
+#carousel-2 img {
 	margin-left: 45%;
 }
 
-.carousel-3 img {
+#carousel-3 img {
 	margin-left: 59%;
-	margin-top: 3%;
+	margin-top: 2%;
 }
 
 /*SEC TITLE*/
@@ -212,12 +170,20 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logo_items {
