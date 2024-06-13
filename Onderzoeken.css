@@ -1,0 +1,65 @@
+figure img {
+    width: 300px; /* change the width to 300px */
+    height: 200px; /* change the height to 200px */
+    object-fit: cover; /* make the image cover the entire area */
+  }
+  
+figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+
+figure {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  figcaption {
+    text-align: center;
+  }
+
+  figure:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+.figure-container {
+  max-width: 800px; /* adjust the max-width to your liking */
+  margin: 40px auto; /* add some margin to the top and bottom */
+  padding: 20px; /* add some padding around the container */
+  background-color: #f7f7f7; /* add a background color to create a "window" effect */
+  border: 1px solid #ddd; /* add a border to create a "window" effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow to create a "window" effect */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* add some margin between the rows */
+}
+
+figure {
+  margin: 20px; /* add some margin around each figure */
+  width: calc(50% - 40px); /* set the width of each figure to 50% of the row minus the margin */
+}
+
+.onderzoekenTitle{
+    justify-content: center;
+}
+
+h5 {
+	color: #707070;
+	font-size: 20px;
+	font-family: "Noto Sans", sans-serif;
+    justify-content: center;
+}
