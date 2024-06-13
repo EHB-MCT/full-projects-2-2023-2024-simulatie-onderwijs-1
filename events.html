@@ -46,7 +46,8 @@
 							id: "congres", // Event's ID (required)
 							name: "Congres", // Event name (required)
 							date: ["May/12/2025", "May/13/2025"], // Event date (required)
-							description: "Combination of plenary sessions and workshops aimed at education and the field of healthcare.",
+							description:
+								"Combination of plenary sessions and workshops aimed at education and the field of healthcare.",
 							type: "event", // Event type (required)
 							everyYear: false, // Same event every year (optional)
 						},
@@ -63,25 +64,24 @@
 
 	<script src="js/event-carousel.js"></script>
 
-	<div class="carousel">
-		<div class="carousel-1">
-			<div class="slider" id="slider-1">
+	<div id="carousel">
+		<div id="carousel-1">
+			<div class="slider">
 				<img src="images/bevalling.png" alt="birth" />
 				<img src="images/bevalling 2.png" alt="birth" />
 			</div>
 		</div>
 
-		<!--werkt niet = hapering bij eeuwig overgang-->
-		<div class="carousel-2">
-			<div class="slider" id="slider-2">
+		<!--goed verschil tussen classes en IDs behouden
+		id is voor eenmalig gebruik, classes voor meerdere gebruiken-->
+		<div id="carousel-2">
+			<div class="slider">
 				<img src="images/cpr.png" alt="cpr" />
 				<img src="images/cpr 2.png" alt="cpr" />
 			</div>
 		</div>
-
-		<!--werkt niet = hapering bij eeuwig overgang-->
-		<div class="carousel-3">
-			<div class="slider" id="slider-3">
+		<div id="carousel-3">
+			<div class="slider">
 				<img src="images/immersive.png" alt="immersive" />
 				<img src="images/immersive 2.png" alt="immersive" />
 			</div>
