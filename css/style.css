@@ -119,6 +119,11 @@ p {
 	margin-left: -5%;
 }
 
+#eduction-title {
+	padding-left: 40%;
+	padding-right: 40%;
+}
+
 /*contact css*/
 
 .main-title-contact {
@@ -267,6 +272,15 @@ h2 {
 	transform: skewX(-80deg);
 }
 
+.line-education {
+	width: 70%;
+	height: 2px;
+	background-color: #81c0c5;
+	position: relative;
+	left: 60px;
+	top: -35px;
+}
+
 #button_1 {
 	margin-top: 50px;
 }
@@ -352,12 +366,20 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logo_items {
@@ -409,30 +431,47 @@ footer {
 }
 
 #map-school {
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding: 5%;
+	align-items: center;
+}
+#map-school > img {
+	resize: stretch;
+	width: 100%;
 }
 .education-flex {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-
-	margin-left: 10%;
-	margin-right: 10%;
+	justify-content: space-around;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-bottom: 100px;
 }
-.education-flex > * {
-	width: 300px;
+.education-flex-item {
+	width: 30%;
+	min-width: 300px;
+	margin-top: 100px;
 }
-.e_f_element {
-	width: 100%;
-	display: block;
-	padding: 5px;
-	height: 30px;
-	padding-left: 50px;
-	box-sizing: border-box;
+.education-flex-item > h2 {
+	position: relative;
+	top: -40px;
+	left: 30px;
+}
+.education-flex-item > img {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.education-flex-item > ul {
+	position: relative;
+	top: -10px;
+	left: 60px;
+	text-decoration: none;
+	list-style: none;
+}
+
+.education-flex-item > ul > li {
+	margin-bottom: 15px;
 }
 
 .link-school {
