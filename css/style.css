@@ -34,12 +34,12 @@ nav ul li a {
 }
 
 h1 {
-	color: black;
+	color: #00828f;
 	font-size: 50px;
 	font-family: "Sedan", serif;
 }
 h2 {
-	color: #5a5858;
+	color: #00828f;
 	font-size: 25px;
 	font-family: "Noto Sans", sans-serif;
 }
@@ -61,6 +61,7 @@ h4 {
 	border: 2px solid #00828f;
 	padding: 5px;
 	margin: 5px;
+	margin-top: 50px;
 }
 #button_1:hover {
 	color: #f2eeed;
@@ -70,6 +71,7 @@ h4 {
 	border: 2px solid #00828f;
 	padding: 5px;
 	margin: 5px;
+	margin-top: 50px;
 }
 .login-button {
 	color: #5a5858;
@@ -146,7 +148,6 @@ h4 {
 }
 .test-para > h2 {
 	float: left;
-	color: black;
 	margin-left: 5px;
 	padding: 10px;
 	font-size: 27px;
@@ -175,7 +176,6 @@ h4 {
 
 .flex-item > * {
 	font-size: 25px;
-	color: #000;
 }
 .flex-item > h1 {
 	font-size: 30px;
@@ -190,14 +190,11 @@ h4 {
 	transform: skewX(-80deg);
 }
 
-#button_1 {
-	margin-top: 50px;
-}
 #tekst-video {
 	font-size: 30px;
 	float: left;
 	margin-bottom: 40px;
-	color: gray;
+	color: #00828f;
 }
 ul {
 	list-style-type: circle;
