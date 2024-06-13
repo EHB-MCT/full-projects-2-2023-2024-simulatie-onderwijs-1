@@ -41,7 +41,7 @@ h1 {
 h2 {
 	color: #00828f;
 	font-size: 25px;
-	font-family: "Noto Sans", sans-serif;
+	font-family: "Sedan", serif;
 }
 h3 {
 	color: #00828f;
@@ -53,10 +53,14 @@ h4 {
 	font-size: 20px;
 	font-family: "Noto Sans", sans-serif;
 }
+
+p {
+	font-size: 20px;
+}
 #button_1 {
 	color: #00828f;
 	font-size: 25px;
-	font-family: Noto Sans;
+	font-family: "Noto Sans";
 	background-color: #f2eeed;
 	border: 2px solid #00828f;
 	padding: 5px;
@@ -77,7 +81,6 @@ h4 {
 	color: #5a5858;
 	font-size: 20px;
 	font-family: "Noto Sans", sans-serif;
-	background-color: #ffffff;
 	border: 2px solid #f9b401;
 	padding: 5px;
 	margin: 5px;
@@ -113,6 +116,80 @@ h4 {
 	text-decoration: underline;
 	text-decoration-color: #00828f;
 }
+
+.group {
+	margin-left: -5%;
+}
+
+/*contact css*/
+
+.main-title-contact {
+	font-size: 40px;
+	margin-bottom: 0;
+	padding: 3%;
+	padding-bottom: 0px;
+	color: #000000;
+	text-align: center;
+}
+
+.contact-image img {
+	width: 75%;
+}
+
+.contact-image {
+	margin-left: 300px;
+	padding-top: 30px;
+}
+
+.contact-info p {
+	margin: 30px;
+}
+
+.email p {
+	line-height: 35px;
+}
+
+.email {
+	margin-left: 0px;
+}
+
+.contact-flex {
+	display: flex;
+	padding-top: 0px;
+	align-items: center;
+	margin-bottom: 225px;
+}
+
+.contact-info {
+	text-align: left;
+	width: 50%;
+	padding-left: 300px;
+}
+
+.phone {
+	margin-top: 50px;
+}
+
+.email a {
+	color: #000000;
+}
+
+h2 {
+	padding-left: 30px;
+}
+
+.line-contact {
+	width: 10%;
+	height: 4px;
+	background-color: #f9b401;
+	margin-bottom: 25px;
+	margin-left: 770px;
+	margin-top: 0px;
+	transform: skewX(-80deg);
+}
+
+/*einde contact css*/
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -273,20 +350,12 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(
-		to left,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logo_items {
@@ -335,4 +404,43 @@ footer {
 	text-decoration: none;
 	font-weight: bold;
 	color: white;
+}
+
+#map-school {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.education-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 100px;
+}
+.education-flex > * {
+	width: 300px;
+}
+.e_f_element {
+	width: 100%;
+	display: block;
+	padding: 5px;
+	height: 30px;
+	padding-left: 50px;
+	box-sizing: border-box;
+}
+
+.link-school {
+	text-decoration: underline;
+	color: #5a5858;
+	flex-wrap: wrap;
+}
+#search-bar {
+	width: 15%;
+	padding: 10px;
+	margin: 20px;
+	font-size: 15px;
 }
