@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+	<title>Full Projects</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<link href="css/reset.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/events_calendar.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/evo-calendar.css" />
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/logo.png" alt="NSH Logo" />
+		</div>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Education</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="#">Research</a></li>
+				<li><a href="#">Tips & Tricks</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<button class="login-button">Log In</button>
+	</header>
+
+	<div class="title">
+		<h1>Events</h1>
+		<div class="line"></div>
+	</div>
+
+	<div class="events">
+		<div id="calendar"></div>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+		<script src="js/evo-calendar.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#calendar").evoCalendar({
+					theme: "Default",
+					calendarEvents: [
+						{
+							id: "congres", // Event's ID (required)
+							name: "Congres", // Event name (required)
+							date: ["May/12/2025", "May/13/2025"], // Event date (required)
+							description: "Combination of plenary sessions and workshops aimed at education and the field of healthcare.",
+							type: "event", // Event type (required)
+							everyYear: false, // Same event every year (optional)
+						},
+					],
+				});
+			});
+		</script>
+	</div>
+
+	<div class="sec-title">
+		<h2>Photogallery: Trainings</h2>
+		<div class="line-2"></div>
+	</div>
+
+	<script src="js/event-carousel.js"></script>
+
+	<div class="carousel">
+		<div class="carousel-1">
+			<div class="slider" id="slider-1">
+				<img src="images/bevalling.png" alt="birth" />
+				<img src="images/bevalling 2.png" alt="birth" />
+			</div>
+		</div>
+
+		<!--werkt niet = hapering bij eeuwig overgang-->
+		<div class="carousel-2">
+			<div class="slider" id="slider-2">
+				<img src="images/cpr.png" alt="cpr" />
+				<img src="images/cpr 2.png" alt="cpr" />
+			</div>
+		</div>
+
+		<!--werkt niet = hapering bij eeuwig overgang-->
+		<div class="carousel-3">
+			<div class="slider" id="slider-3">
+				<img src="images/immersive.png" alt="immersive" />
+				<img src="images/immersive 2.png" alt="immersive" />
+			</div>
+		</div>
+	</div>
+
+	<div class="para-carousel"></div>
+
+	<div id="footer-line-1" class="footer-lines"></div>
+	<div id="footer-line-2" class="footer-lines"></div>
+	<div id="footer-line-3" class="footer-lines"></div>
+	<div id="footer-line-4" class="footer-lines"></div>
+	<div id="footer-line-5" class="footer-lines"></div>
+	<div id="footer-line-6" class="footer-lines"></div>
+
+	<footer>
+		<div id="footer-menu">
+			<div id="footer-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Education</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Research</a></li>
+					<li><a href="#">Tips & Tricks</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div id="footer-socials">
+				<img src="images/instagram.png" />
+				<img src="images/youtube.png" />
+				<img src="images/facebook.png" />
+			</div>
+		</div>
+		<div class="logos">
+			<div class="logo_items">
+				<img src="images/1314_logo_pxl_hogeschool.png" />
+				<img src="images/ARTEVELDE_hs_logo-RGB.png" />
+				<img src="images/AP_logo_staand_rgb.jpg" />
+				<img src="images/ehb.png" />
+				<img src="images/HOGENT_16_9_rjzsvz.png" />
+				<img src="images/Howest_hogeschool-logo_RGB-BLAUWLIJNTJES.jpg" />
+				<img src="images/images (2).png" />
+				<img src="images/images (3).png" />
+				<img src="images/Logo_H_Closed_whitespace.png" />
+				<img src="images/Logo_Thomas_More.png" />
+				<img src="images/Odisee_Logo_Co-hogeschool.png" />
+			</div>
+			<div class="logo_items">
+				<img src="images/1314_logo_pxl_hogeschool.png" />
+				<img src="images/ARTEVELDE_hs_logo-RGB.png" />
+				<img src="images/AP_logo_staand_rgb.jpg" />
+				<img src="images/ehb.png" />
+				<img src="images/HOGENT_16_9_rjzsvz.png" />
+				<img src="images/Howest_hogeschool-logo_RGB-BLAUWLIJNTJES.jpg" />
+				<img src="images/images (2).png" />
+				<img src="images/images (3).png" />
+				<img src="images/Logo_H_Closed_whitespace.png" />
+				<img src="images/Logo_Thomas_More.png" />
+				<img src="images/Odisee_Logo_Co-hogeschool.png" />
+			</div>
+		</div>
+	</footer>
+</body>

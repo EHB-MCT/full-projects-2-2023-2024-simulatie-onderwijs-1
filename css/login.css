@@ -1,0 +1,97 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 50px auto;
+	max-width: 500px;
+	background-color: #fff;
+	padding: 30px;
+	box-shadow: 0 10px 50px -20px #00828f;
+	margin-bottom: 10%;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+label {
+	font-family: "Noto Sans", sans-serif;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+	font-family: "Noto Sans", sans-serif;
+	padding: 10px;
+	margin-bottom: 5%;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.signin-btn {
+	padding: 10px;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 18px;
+	border-width: 2px;
+	border-color: #f9b401;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.signin {
+	text-align: center;
+}
+
+.signin-btn:hover {
+	background-color: #f9b401;
+}
+
+.forgot {
+	font-family: "Noto Sans", sans-serif;
+	color: #707070;
+	margin-top: 5%;
+	text-align: center;
+}
+
+.stripe {
+	height: 2px;
+	background-color: #00828f;
+	margin-top: 10%;
+}
+
+.create-btn {
+	width: 45%;
+	padding: 10px;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	border-width: 2px;
+	border-color: #f9b401;
+	margin-top: 10%;
+}
+
+.create-btn:hover {
+	color: #fff;
+	background-color: #f9b401;
+}
+
+.create {
+	text-align: center;
+}
+
+.line {
+	width: 30%;
+}
