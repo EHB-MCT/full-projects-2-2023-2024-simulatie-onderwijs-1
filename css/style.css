@@ -53,6 +53,10 @@ h4 {
 	font-size: 20px;
 	font-family: "Noto Sans", sans-serif;
 }
+
+p {
+	font-size: 20px;
+}
 #button_1 {
 	color: #00828f;
 	font-size: 25px;
@@ -109,6 +113,10 @@ h4 {
 .navbar ul li a:hover {
 	text-decoration: underline;
 	text-decoration-color: #00828f;
+}
+
+.group {
+	margin-left: -5%;
 }
 
 /*contact css*/
@@ -344,20 +352,12 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(
-		to left,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logo_items {
