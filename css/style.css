@@ -112,10 +112,11 @@ p {
 	color: #5a5858;
 }
 
-.navbar ul li a:hover {
+/*.navbar ul li a:hover {
 	text-decoration: underline;
 	text-decoration-color: #00828f;
 }
+*/
 
 .group {
 	margin-left: -5%;
