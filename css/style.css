@@ -137,7 +137,7 @@ p {
 	margin-bottom: 0;
 	padding: 3%;
 	padding-bottom: 0px;
-	color: #000000;
+	color: #00828f;
 	text-align: center;
 }
 
@@ -192,7 +192,7 @@ h2 {
 	height: 4px;
 	background-color: #f9b401;
 	margin-bottom: 25px;
-	margin-left: 770px;
+	margin-left: 45%;
 	margin-top: 0px;
 	transform: skewX(-80deg);
 }
@@ -486,6 +486,7 @@ footer {
 .flex-item-2 {
 	width: 90%;
 	margin-bottom: 3%;
+	margin-top: -2%;
 }
 #title-tips {
 	text-align: center;
