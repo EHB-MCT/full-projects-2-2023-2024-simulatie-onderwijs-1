@@ -16,10 +16,8 @@ header {
 	align-items: center;
 	padding: 20px 50px;
 
-	background-color: #F2EEED;
+	background-color: #f2eeed;
 	border-bottom: 1px solid black;
-
-	
 }
 .logo img {
 	height: 50px;
@@ -85,13 +83,13 @@ p {
 	font-size: 20px;
 	font-family: "Noto Sans", sans-serif;
 
-	background-color: #F2EEED;
+	background-color: #f2eeed;
 	border: 2px solid #f9b401;
 	padding: 5px;
 	margin: 5px;
 }
 .login-button:hover {
-	color: #F2EEED;
+	color: #f2eeed;
 	font-size: 20px;
 	font-family: "Noto Sans", sans-serif;
 	background-color: #f9b401;
@@ -269,11 +267,11 @@ h2 {
 	font-size: 30px;
 }
 .line {
-	width: 20%;
+	width: 80%;
 	height: 4px;
 	background-color: #f9b401;
 	margin-bottom: 25px;
-	margin-left: 5px;
+	margin-left: 10%;
 	margin-top: 5px;
 	transform: skewX(-80deg);
 }
@@ -374,20 +372,12 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(
-		to left,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logo_items {
@@ -495,6 +485,7 @@ footer {
 }
 .flex-item-2 {
 	width: 90%;
+	margin-bottom: 3%;
 }
 #title-tips {
 	text-align: center;
@@ -519,11 +510,10 @@ footer {
 }
 .conversation-box {
 	width: 90%;
-	border-radius: 5px;
 	background-color: #f2f2f2;
 	margin: 0 auto;
 	padding: 10px;
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 10px 50px -20px #00828f;
 }
 
 .chat-header {
@@ -533,6 +523,7 @@ footer {
 }
 
 .chat-messages {
+	margin-top: 3%;
 	height: 300px;
 	overflow-y: scroll;
 	border-bottom: 1px solid #ccc;
