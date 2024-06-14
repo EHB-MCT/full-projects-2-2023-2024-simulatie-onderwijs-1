@@ -467,6 +467,9 @@ footer {
 	text-decoration: none;
 	list-style: none;
 }
+#education-title > h1 {
+	margin-top: 50px;
+}
 
 .education-flex-item > ul > li {
 	margin-bottom: 15px;
