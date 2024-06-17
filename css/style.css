@@ -20,7 +20,11 @@ header {
 	border-bottom: 1px solid black;
 }
 .logo img {
-	height: 50px;
+	height: 90px;
+	position: absolute;
+	padding: 10px;
+	top: 5px;
+	left: 10px;
 }
 nav ul {
 	list-style: none;
