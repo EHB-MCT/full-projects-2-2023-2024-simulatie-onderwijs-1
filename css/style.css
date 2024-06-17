@@ -132,78 +132,76 @@ p {
 /* Media queries for responsive navigation */
 @media (max-width: 768px) {
 	.navbar ul {
-	   flex-direction: column;
-	 }
+		flex-direction: column;
+	}
 	.navbar ul li {
-	   display: block;
-	 }
+		display: block;
+	}
 	.navbar ul li a {
-	   padding: 10px 20px;
-	 }
-	 nav ul {
-	   flex-direction: column;
-	   gap: 10px;
-	 }
-	 nav ul li a {
-	   font-size: 1.2em;
-	 }
-   }
-   
-   @media (max-width: 480px) {
-	.navbar ul {
-	   flex-direction: column;
-	 }
-	.navbar ul li {
-	   display: block;
-	 }
-	.navbar ul li a {
-	   padding: 8px 15px;
-	 }
-	 nav ul {
-	   flex-direction: column;
-	   gap: 5px;
-	 }
-	 nav ul li a {
-	   font-size: 1em;
-	 }
-   }
-   
-   @media (max-width: 320px) {
-	.navbar ul {
-	   flex-direction: column;
-	 }
-	.navbar ul li {
-	   display: block;
-	 }
-	.navbar ul li a {
-	   padding: 6px 10px;
-	 }
-	 nav ul {
-	   flex-direction: column;
-	   gap: 2px;
-	 }
-	 nav ul li a {
-	   font-size: 0.9em;
-	 }
-   }
+		padding: 10px 20px;
+	}
+	nav ul {
+		flex-direction: column;
+		gap: 10px;
+	}
+	nav ul li a {
+		font-size: 1.2em;
+	}
+}
 
+@media (max-width: 480px) {
+	.navbar ul {
+		flex-direction: column;
+	}
+	.navbar ul li {
+		display: block;
+	}
+	.navbar ul li a {
+		padding: 8px 15px;
+	}
+	nav ul {
+		flex-direction: column;
+		gap: 5px;
+	}
+	nav ul li a {
+		font-size: 1em;
+	}
+}
 
+@media (max-width: 320px) {
+	.navbar ul {
+		flex-direction: column;
+	}
+	.navbar ul li {
+		display: block;
+	}
+	.navbar ul li a {
+		padding: 6px 10px;
+	}
+	nav ul {
+		flex-direction: column;
+		gap: 2px;
+	}
+	nav ul li a {
+		font-size: 0.9em;
+	}
+}
 
 @media (max-width: 768px) {
- .navbar-toggle {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-  }
- .navbar ul {
-    display: none;
-  }
- .navbar ul.active {
-    display: block;
-  }
+	.navbar-toggle {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 24px;
+		cursor: pointer;
+	}
+	.navbar ul {
+		display: none;
+	}
+	.navbar ul.active {
+		display: block;
+	}
 }
 .navbar-toggle {
 	display: none;
@@ -211,20 +209,20 @@ p {
 	cursor: pointer;
 	padding: 10px;
 	border: none;
-	background-color: #F2EEED;
+	background-color: #f2eeed;
 	color: #333;
-  }
-  
-  .navbar-toggle.active {
+}
+
+.navbar-toggle.active {
 	background-color: #00828f;
 	color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-   .navbar-toggle {
-	  display: block;
+}
+
+@media (max-width: 768px) {
+	.navbar-toggle {
+		display: block;
 	}
-  }	
+}
 
 /*contact css*/
 
@@ -469,12 +467,20 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logo_items {
