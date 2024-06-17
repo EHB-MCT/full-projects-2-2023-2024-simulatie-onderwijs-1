@@ -31,10 +31,15 @@
 	margin-bottom: 0px; /* reduced margin from 20px to 15px */
 	width: 20%;
 	margin: 0 auto;
+	margin-top: 3%;
 	display: block;
 	position: relative;
 	top: 0px; /* removed top: -5px */
-	border-bottom: 3px solid #f9b401;
+}
+
+.line {
+	margin-left: 40%;
+	width: 20%;
 }
 
 .research-item {
