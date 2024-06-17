@@ -355,6 +355,23 @@ h2 {
 	margin-left: 5%;
 	margin-right: 5%;
 	flex-wrap: wrap;
+	gap: 20px;
+}
+
+#foto-container {
+	border: 10px solid transparent; /* Dikte van de rand */
+	position: relative; /* Belangrijk voor positionering van de animatie */
+}
+#foto-container::before {
+	content: "";
+	position: absolute; /* Positionering binnen de foto-container */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black; /* Kleur van de animatie */
+	opacity: 0; /* Begin transparantie */
+	transition: opacity 0.5s ease; /* Animatieduur en effect */
 }
 
 .flex-item {
@@ -362,6 +379,10 @@ h2 {
 	margin: 10px;
 	width: 45%;
 	min-width: 400px;
+}
+.flex-item-img {
+	min-width: 400px;
+	max-width: 600px;
 }
 
 .flex-item > * {
