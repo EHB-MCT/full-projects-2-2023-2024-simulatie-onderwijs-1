@@ -26,6 +26,12 @@ header {
 	top: 5px;
 	left: 10px;
 }
+.photo-logo {
+	position: relative;
+	top: 30px;
+	left: -100px;
+	height: 50px;
+}
 nav ul {
 	list-style: none;
 	display: flex;
