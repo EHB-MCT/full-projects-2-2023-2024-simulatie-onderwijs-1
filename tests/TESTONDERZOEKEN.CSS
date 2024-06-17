@@ -4,9 +4,16 @@
 	gap: 20px;
 }
 
-.research-item img {
+.research-photo {
 	width: 100%;
 	height: auto;
+}
+
+.photo-logo {
+	position: relative;
+	top: -60px;
+	left: 10px;
+	width: 50px;
 }
 
 .research-name {
