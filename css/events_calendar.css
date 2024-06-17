@@ -83,24 +83,21 @@ h1 {
 }
 
 #carousel {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	width: 100%;
-	align-content: space-around;
-	height: 500px;
-	background-color: blue;
+	margin-bottom: 25%;
 }
 
-#carousel-1 img,
-#carousel-3 img {
-	width: 300px;
-	flex-basis: 300px;
+#carousel-1 img {
+	margin-top: 2%;
+	margin-left: 22%;
 }
 
 #carousel-2 img {
-	width: 200px;
-	flex-basis: 200px;
+	margin-left: 45%;
+}
+
+#carousel-3 img {
+	margin-left: 59%;
+	margin-top: 2%;
 }
 
 /*SEC TITLE*/
