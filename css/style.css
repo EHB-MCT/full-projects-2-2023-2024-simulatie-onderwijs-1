@@ -565,12 +565,20 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logo_items {
@@ -787,4 +795,11 @@ footer {
 }
 .menu-item-active {
 	border-bottom: 2px solid #f9b401;
+}
+#error-message {
+	color: red;
+	font-style: oblique;
+}
+#uitloggen {
+	display: none;
 }
