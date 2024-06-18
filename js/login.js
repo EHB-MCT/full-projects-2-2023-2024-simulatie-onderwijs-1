@@ -23,13 +23,13 @@ if (window.location.href.endsWith("login.html")) {
 		const username = document.getElementById("username").value;
 		const password = document.getElementById("password").value;
 
-		const lines = require("fs").readFileSync("psw.txt", "utf-8").split("\n");
-		const validCredentials = lines.some((line) => {
-			const [user, pass] = line.split(",");
-			return user === username && decryptPassword(pass) === password;
-		});
+		//		const lines = require("fs").readFileSync("psw.txt", "utf-8").split("\n");
+		//		const validCredentials = lines.some((line) => {
+		//			const [user, pass] = line.split(",");
+		//			return user === username && decryptPassword(pass) === password;
+		//		});
 
-		if (validCredentials) {
+		if (username === "admin" && password === "admin") {
 			localStorage.setItem("loggedIn", true);
 			loggedIn = "true";
 			window.location.href = "index.html";
