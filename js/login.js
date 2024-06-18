@@ -22,7 +22,13 @@ if (window.location.href.endsWith("login.html")) {
 		const username = document.getElementById("username").value;
 		const password = document.getElementById("password").value;
 
-		if (username === "admin" && password === "admin") {
+		const lines = require("fs").readFileSync("psw.txt", "utf-8").split("\n");
+		const validCredentials = lines.some(line => {
+			const [user, pass] = line.split(',');
+			return user === username && pass === password;
+		});
+
+		if (validCredentials) {
 			localStorage.setItem("loggedIn", true);
 			window.location.href = "index.html";
 		} else {
