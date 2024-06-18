@@ -37,18 +37,16 @@
 		<h1>CREATE ACCOUNT</h1>
 		<div class="line"></div>
 
-		<form action="submit">
-			<input type="text" placeholder="Username" />
-			<input type="text" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<input type="password" placeholder="Re-enter password" />
+		<form id="formcreate" action="submit">
+			<input id="username" type="text" placeholder="Username" autocomplete="name" />
+			<input id="email" type="text" placeholder="Email" autocomplete="email" />
+			<input id="password" type="password" placeholder="Password" autocomplete="new-password" />
+			<input id="repassword" type="password" placeholder="Re-enter password" autocomplete="new-password" />
+			<div class="createacc">
+				<button id="submitbutton" class="createacc-btn">Create</button>
+			</div>
 		</form>
-
-		<div class="createacc">
-			<a href="login.html"><button class="createacc-btn">Create</button></a>
-		</div>
 	</div>
-
 	<div id="footer-line-1" class="footer-lines"></div>
 	<div id="footer-line-2" class="footer-lines"></div>
 	<div id="footer-line-3" class="footer-lines"></div>
@@ -75,7 +73,6 @@
 		</div>
 		<div class="logos">
 			<div class="logo_items">
-				<<<<<<< HEAD
 				<a href="https://www.pxl.be/"><img src="img/1314_logo_pxl_hogeschool.png" /></a>
 				<a href="https://www.arteveldehogeschool.be/"><img src="img/ARTEVELDE_hs_logo-RGB.png" /></a>
 				<a href="https://www.ap.be/"><img src="img/AP_logo_staand_rgb.jpg" /></a>
@@ -130,6 +127,6 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/login.js"></script>
-
+	<script type="text/javascript" src="js/createaccount.js"></script>
 </body>
 </html>
