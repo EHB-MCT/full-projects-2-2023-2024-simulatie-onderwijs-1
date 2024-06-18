@@ -20,12 +20,16 @@ h1 {
 	padding-top: 3%;
 }
 
+h2 {
+	font-size: 30px;
+}
+
 .title {
 	text-align: center;
 }
 
 .line {
-	width: 10%;
+	width: 13%;
 	height: 4px;
 	background-color: #f9b401;
 	margin-bottom: 25px;
@@ -35,7 +39,7 @@ h1 {
 }
 
 .line-2 {
-	width: 8%;
+	width: 10%;
 	height: 4px;
 	background-color: #f9b401;
 	margin-bottom: 25px;

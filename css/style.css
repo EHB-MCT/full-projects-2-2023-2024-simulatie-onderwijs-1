@@ -233,13 +233,12 @@ p {
 
 /*contact css*/
 
-.main-title-contact {
-	font-size: 40px;
-	margin-bottom: 0;
-	padding: 3%;
-	padding-bottom: 0px;
-	color: #00828f;
+.title {
 	text-align: center;
+}
+
+.title > h1 {
+	padding-top: 3%;
 }
 
 .contact-image img {
@@ -681,6 +680,7 @@ footer {
 
 .link-school {
 	text-decoration: underline;
+	font-family: "Noto Sans", sans-serif;
 	color: #5a5858;
 	flex-wrap: wrap;
 }
@@ -706,6 +706,16 @@ footer {
 #search-glass {
 	height: 30px;
 	resize: stretch;
+}
+
+.line-tips {
+	width: 90%;
+	height: 4px;
+	background-color: #f9b401;
+	margin-bottom: 25px;
+	margin-top: 0px;
+	margin: 0 auto;
+	transform: skewX(-80deg);
 }
 
 .reply-button {
