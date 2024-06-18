@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/login.css" />
 	<script src="js/Nav.js"></script>
 	<link rel="icon" type="image/png" href="img/Middel 3.png" />
-	<script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
 	<header>
@@ -27,7 +26,10 @@
 			</ul>
 			<button class="navbar-toggle">☰</button>
 		</nav>
-		<a href="login.html"><button class="login-button">LOG IN</button></a>
+		<button type="button" href="login.html" id="inloggen" class="login-button">
+			LOG IN
+		</button>
+		<button type="button" id="uitloggen" class="login-button">LOG UIT</button>
 	</header>
 
 	<div class="container">
@@ -36,9 +38,15 @@
 
 		<form id="login-form">
 			<label for="username">Username:</label>
-			<input type="text" name="username" placeholder="Enter your username" />
+			<input
+				id="username"
+				type="text"
+				name="username"
+				placeholder="Enter your username"
+			/>
 			<label for="password">Password:</label>
 			<input
+				id="password"
 				type="password"
 				name="password"
 				placeholder="Enter your password"
@@ -166,4 +174,6 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="js/login.js"></script>
 </body>
+</html>
