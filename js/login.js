@@ -31,10 +31,12 @@ if (window.location.href.endsWith("login.html")) {
 
 		if (validCredentials) {
 			localStorage.setItem("loggedIn", true);
+			loggedIn = "true";
 			window.location.href = "index.html";
 			console.log("Inloggen gelukt");
 		} else {
 			localStorage.setItem("loggedIn", false);
+			loggedIn = "false";
 			// Voorkom dat het formulier wordt verzonden
 			event.preventDefault();
 			errorMessage.textContent =
