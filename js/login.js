@@ -1,6 +1,5 @@
 const form = document.getElementById("login-form");
 const errorMessage = document.getElementById("error-message");
-const loggedIn = localStorage.getItem("loggedIn");
 const loginButton = document.getElementById("inloggen");
 const logoutbutton = document.getElementById("uitloggen");
 
@@ -10,8 +9,6 @@ form.addEventListener("submit", (event) => {
 
 	if (username === "admin" && password === "admin") {
 		localStorage.setItem("loggedIn", true);
-		location.reload();
-		// Redirect to another page
 		window.location.href = "index.html";
 	} else {
 		localStorage.setItem("loggedIn", false);
@@ -35,4 +32,8 @@ window.onload = function () {
 logoutbutton.addEventListener("click", () => {
 	localStorage.setItem("loggedIn", false);
 	location.reload();
+});
+
+loginButton.addEventListener("click", () => {
+	window.location.href = "login.html";
 });

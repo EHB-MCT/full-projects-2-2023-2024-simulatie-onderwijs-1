@@ -800,3 +800,6 @@ footer {
 	color: red;
 	font-style: oblique;
 }
+#uitloggen {
+	display: none;
+}
