@@ -235,6 +235,7 @@ p {
 
 .title {
 	text-align: center;
+	margin-bottom: 5%;
 }
 
 .title > h1 {
@@ -288,12 +289,10 @@ h2 {
 }
 
 .line-contact {
-	width: 10%;
+	width: 16%;
 	height: 4px;
 	background-color: #f9b401;
-	margin-bottom: 25px;
-	margin-left: 45%;
-	margin-top: 0px;
+	margin: 0 auto;
 	transform: skewX(-80deg);
 }
 
