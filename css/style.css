@@ -31,7 +31,6 @@ nav ul {
 
 nav ul li a {
 	text-decoration: none;
-	font-weight: bold;
 }
 
 h1 {
@@ -467,20 +466,12 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(
-		to left,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
 .logo_items {
