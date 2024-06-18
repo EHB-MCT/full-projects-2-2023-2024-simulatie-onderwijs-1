@@ -66,24 +66,22 @@ h4 {
 
 p {
 	font-size: 20px;
+	font-family: "Noto Sans", sans-serif;
 }
 #button_1 {
 	color: #00828f;
-	font-size: 25px;
+	font-size: 20px;
 	font-family: "Noto Sans", sans-serif;
 	background-color: #f2eeed;
 	border: 2px solid #00828f;
-	padding: 5px;
+	padding: 10px;
 	margin: 5px;
 	margin-top: 50px;
 }
 #button_1:hover {
 	color: #f2eeed;
-	font-size: 25px;
-	font-family: "Noto Sans", sans-serif;
 	background-color: #00828f;
 	border: 2px solid #00828f;
-	padding: 5px;
 	margin: 5px;
 	margin-top: 50px;
 }
@@ -330,7 +328,7 @@ h2 {
 .test-para > p {
 	margin: 15px;
 	margin-top: 10px;
-	font-size: 23px;
+	font-size: 20px;
 	position: relative;
 	float: left;
 	color: #00828f;
@@ -455,18 +453,19 @@ h2 {
 	overflow: hidden;
 }
 
-.flex-item > * {
-	font-size: 25px;
+.flex-item > ul {
+	font-size: 20px;
+	font-family: "Noto Sans", sans-serif;
 }
+
 .flex-item > h1 {
 	font-size: 30px;
 }
 .line {
-	width: 80%;
+	width: 20%;
 	height: 4px;
 	background-color: #f9b401;
 	margin-bottom: 25px;
-	margin-left: 10%;
 	margin-top: 5px;
 	transform: skewX(-80deg);
 }
@@ -631,6 +630,15 @@ footer {
 #map-school > img {
 	resize: stretch;
 	width: 100%;
+}
+
+.line-ed {
+	width: 100%;
+	height: 4px;
+	background-color: #f9b401;
+	margin-bottom: 25px;
+	margin-top: 0px;
+	transform: skewX(-80deg);
 }
 .education-flex {
 	display: flex;
