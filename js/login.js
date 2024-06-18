@@ -31,13 +31,12 @@ if (window.location.href.endsWith("login.html")) {
 
 		if (validCredentials) {
 			localStorage.setItem("loggedIn", true);
-			loggedIn = "true";
 			window.location.href = "index.html";
 			console.log("Inloggen gelukt");
 		} else {
 			localStorage.setItem("loggedIn", false);
-			loggedIn = "false";
-			event.preventDefault(); // Voorkom dat het formulier wordt verzonden
+			// Voorkom dat het formulier wordt verzonden
+			event.preventDefault();
 			errorMessage.textContent =
 				"Vul a.u.b. de juiste gebruikersnaam en wachtwoord in.";
 			console.log("Inloggen mislukt");
