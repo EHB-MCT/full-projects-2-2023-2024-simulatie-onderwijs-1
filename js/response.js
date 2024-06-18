@@ -12,6 +12,7 @@ class Research {
 	}
 }
 // maak de getData functie aan voor de class research
+const data = [];
 
 //get functie voor de date
 export function getDate() {
@@ -61,3 +62,33 @@ fetch(apiUrl)
 
 //data get functie
 export default data;
+
+//create response.research
+export const Research = response.Research;
+
+//create response.tags
+export const Tags = response.Tags;
+
+//create response.author
+export const Author = response.Author;
+
+//create response.date
+export const Date = response.Date;
+
+//create response.conten
+export const Content = response.Content;
+
+//create response.link
+export const Link = response.Link;
+
+//create response.image
+export const Image = response.Image;
+
+//create response.title
+export const Title = response.Title;
+
+//create response.modified
+export const Modified = response.Modified;
+
+//create response.author
+export const Author = response.Author;

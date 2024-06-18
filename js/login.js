@@ -4,13 +4,14 @@ const form = document.getElementById("login-form");
 // Het element waarin een foutmelding wordt weergegeven
 const errorMessage = document.getElementById("error-message");
 
+//cookie
+const cookieConsent = document.querySelector(".cookie-consent");
+
 // De "Inloggen" knop
 const loginButton = document.getElementById("inloggen");
 
 // Controleer of de gebruiker is ingelogd
-const loggedIn = document.cookie.includes("cookieAccepted=true")
-	? localStorage.getItem("loggedIn")
-	: null;
+let loggedIn = localStorage.getItem("loggedIn");
 
 // De "Uitloggen" knop
 const logoutbutton = document.getElementById("uitloggen");
@@ -30,12 +31,16 @@ if (window.location.href.endsWith("login.html")) {
 
 		if (validCredentials) {
 			localStorage.setItem("loggedIn", true);
+			loggedIn = "true";
 			window.location.href = "index.html";
+			console.log("Inloggen gelukt");
 		} else {
 			localStorage.setItem("loggedIn", false);
+			loggedIn = "false";
 			event.preventDefault(); // Voorkom dat het formulier wordt verzonden
 			errorMessage.textContent =
 				"Vul a.u.b. de juiste gebruikersnaam en wachtwoord in.";
+			console.log("Inloggen mislukt");
 		}
 	});
 }
@@ -43,23 +48,11 @@ if (window.location.href.endsWith("login.html")) {
 // Controleer of de gebruiker is ingelogd en pas de weergave van de login/logout knoppen aan
 window.onload = function () {
 	// Vraag de gebruiker toestemming om cookies te gebruiken
-	const cookieConsent = document.getElementById("cookieConsent");
 	if (cookieConsent) {
 		cookieConsent.addEventListener("click", () => {
 			document.cookie = `cookieAccepted=true; path=/`;
 			cookieConsent.style.display = "none";
 		});
-	}
-
-	// Zorg ervoor dat cookies beschikbaar zijn voor de site
-	function getCookie(name) {
-		const value = `; ${document.cookie}`;
-		const parts = value.split(`; ${name}=`);
-		if (parts.length === 2) return parts.pop().split(";").shift();
-	}
-
-	if (getCookie("cookieAccepted") !== "true") {
-		cookieConsent.style.display = "block";
 	}
 
 	// Controleer of de gebruiker is ingelogd
@@ -115,3 +108,19 @@ function decryptPassword(password) {
 		return hashHex;
 	});
 }
+
+//bij laden van de website de cookieconsent aanmaken als de gebruiker niet ze heeft geaccepteerd
+document.addEventListener("DOMContentLoaded", function () {
+	if (!cookieConsent) {
+		return;
+	}
+	cookieConsent.style.display = "block";
+});
+
+//bij verlaten van de website de cookieconsent verbergen
+document.addEventListener("beforeunload", function () {
+	if (!cookieConsent) {
+		return;
+	}
+	cookieConsent.style.display = "none";
+});

@@ -1,18 +1,22 @@
-//import functies van response.js
-import { Research } from "./response.js";
+import response from "./response.js";
+//Load data from response.js
+document.addEventListener("DOMContentLoaded", function () {
+	let Research = response.Research;
+	//define response data
+	console.log(Research);
 
-const URL =
-	"https://even-camera.pockethost.io/api/collections/Research/records";
+	const URL =
+		"https://even-camera.pockethost.io/api/collections/Research/records";
 
-fetch(URL)
-	.then((response) => response.json())
-	.then((data) => displayData(data));
+	fetch(URL)
+		.then((response) => response.json())
+		.then((data) => displayData(data));
 
-function displayData(data) {
-	const researchList = document.getElementById("research-grid");
-	data.forEach((Research) => {
-		const listItem = document.createElement("div");
-		listItem.innerHTML = `
+	function displayData(data) {
+		const researchList = document.getElementById("research-grid");
+		data.forEach((Research) => {
+			const listItem = document.createElement("div");
+			listItem.innerHTML = `
             <div class="research-item">
                 <img class="research-photo" src="${research.image}" alt="${research.title}">
                 <div class="research-info">
@@ -21,6 +25,7 @@ function displayData(data) {
                 </div>
             </div>
         `;
-		researchList.appendChild(listItem);
-	});
-}
+			researchList.appendChild(listItem);
+		});
+	}
+});

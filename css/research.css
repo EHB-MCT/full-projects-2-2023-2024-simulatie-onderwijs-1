@@ -31,6 +31,10 @@
 .page-wrapper {
 	margin: 0 10%;
 }
+.page-wrapper > h1 {
+	margin-left: 40%;
+	margin-right: 40%;
+}
 
 .research-header {
 	text-align: center;
