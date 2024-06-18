@@ -20,6 +20,16 @@ header {
 	border-bottom: 1px solid black;
 }
 .logo img {
+	height: 90px;
+	position: absolute;
+	padding: 10px;
+	top: 5px;
+	left: 10px;
+}
+.photo-logo {
+	position: relative;
+	top: 30px;
+	left: -100px;
 	height: 50px;
 }
 nav ul {
@@ -341,16 +351,108 @@ h2 {
 	display: flex;
 	margin-bottom: 100px;
 	justify-content: center;
+	align-items: flex-end;
 	margin-left: 5%;
 	margin-right: 5%;
 	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.photo-container {
+	position: relative; /* Needed for element positioning */
+	overflow: hidden; /* Clip overflowing content (optional) */
+	padding: 10px;
+	height: auto;
+	min-width: 500px;
+}
+.photo-container::after {
+	content: "";
+	position: absolute;
+	transform: translate(-50%, -50%); /* Center the element */
+	width: 200px; /* Adjust size of the square */
+	height: 200px; /* Adjust size of the square */
+	background-color: #f9b401; /* Color of the square */
+	animation: goaround 10s ease-in-out infinite; /* Animation properties */
+	z-index: -1;
+}
+
+@keyframes goaround {
+	0% {
+		top: 0;
+		left: 0;
+	}
+	25% {
+		top: 400px;
+		left: 0;
+	}
+	50% {
+		top: 400px;
+		left: 420px;
+	}
+	75% {
+		top: 0;
+		left: 420px;
+	}
+	100% {
+		top: 0;
+		left: 0;
+	}
+}
+
+.photo-container2 {
+	position: relative; /* Needed for element positioning */
+	min-width: 500px;
+}
+.photo-container2::after {
+	content: "";
+	position: absolute;
+	transform: translate(-50%, -50%); /* Center the element */
+	width: 200px; /* Adjust size of the square */
+	height: 200px; /* Adjust size of the square */
+	background-color: #f9b401; /* Color of the square */
+	animation: goaround2 10s ease-in-out infinite; /* Animation properties */
+	z-index: -1;
+}
+
+@keyframes goaround2 {
+	0% {
+		top: 420px;
+		left: 410px;
+	}
+	25% {
+		top: -20px;
+		left: 410px;
+	}
+	50% {
+		top: -20px;
+		left: -20px;
+	}
+	75% {
+		top: 420px;
+		left: -20px;
+	}
+	100% {
+		top: 420px;
+		left: 410px;
+	}
+}
+.photo-container-blue::after {
+	background-color: #81c0c5;
 }
 
 .flex-item {
 	padding: 10px;
 	margin: 10px;
 	width: 45%;
-	min-width: 400px;
+	min-width: 500px;
+}
+.flex-item-img {
+	width: 500px;
+	overflow: hidden;
+}
+.flex-item-img2 {
+	width: 500px;
+	overflow: hidden;
 }
 
 .flex-item > * {
