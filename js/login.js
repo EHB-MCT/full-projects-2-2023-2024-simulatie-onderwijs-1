@@ -1,12 +1,23 @@
+// Het formulier voor inloggen
 const form = document.getElementById("login-form");
+
+// Het element waarin een foutmelding wordt weergegeven
 const errorMessage = document.getElementById("error-message");
+
+// De "Inloggen" knop
 const loginButton = document.getElementById("inloggen");
+
+// Controleer of de gebruiker is ingelogd
 const loggedIn = document.cookie.includes("cookieAccepted=true")
 	? localStorage.getItem("loggedIn")
 	: null;
+
+// De "Uitloggen" knop
 const logoutbutton = document.getElementById("uitloggen");
 
+// Controleer of de gebruiker op de pagina is die inloggen vereist
 if (window.location.href.endsWith("login.html")) {
+	// Voeg een event listener toe aan het formulier om de inlogactie te controleren
 	form.addEventListener("submit", (event) => {
 		const username = document.getElementById("username").value;
 		const password = document.getElementById("password").value;
@@ -16,16 +27,16 @@ if (window.location.href.endsWith("login.html")) {
 			window.location.href = "index.html";
 		} else {
 			localStorage.setItem("loggedIn", false);
-			event.preventDefault(); // Prevent form submission
+			event.preventDefault(); // Voorkom dat het formulier wordt verzonden
 			errorMessage.textContent =
-				"Gelieve gebruikersnaam en wachtwoord correct in te voeren.";
+				"Vul a.u.b. de juiste gebruikersnaam en wachtwoord in.";
 		}
 	});
 }
 
-// Check if user is logged in and hide/show login button accordingly
+// Controleer of de gebruiker is ingelogd en pas de weergave van de login/logout knoppen aan
 window.onload = function () {
-	// Prompt user to accept cookies
+	// Vraag de gebruiker toestemming om cookies te gebruiken
 	const cookieConsent = document.getElementById("cookieConsent");
 	if (cookieConsent) {
 		cookieConsent.addEventListener("click", () => {
@@ -34,7 +45,7 @@ window.onload = function () {
 		});
 	}
 
-	// Make cookies available for this site
+	// Zorg ervoor dat cookies beschikbaar zijn voor de site
 	function getCookie(name) {
 		const value = `; ${document.cookie}`;
 		const parts = value.split(`; ${name}=`);
@@ -45,12 +56,22 @@ window.onload = function () {
 		cookieConsent.style.display = "block";
 	}
 
+	// Controleer of de gebruiker is ingelogd
 	if (loggedIn === "true") {
 		loginButton.style.display = "none";
 		logoutbutton.style.display = "block";
 	} else {
 		loginButton.style.display = "block";
 		logoutbutton.style.display = "none";
+	}
+	//indien gebruiker zich op de pagina research of forum zit en niet ingelogt is, ga naar inlogpagina
+	if (
+		window.location.href.endsWith("research.html") ||
+		window.location.href.endsWith("tips-en-tricks.html")
+	) {
+		if (loggedIn !== "true") {
+			window.location.href = "login.html";
+		}
 	}
 };
 
