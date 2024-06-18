@@ -23,9 +23,9 @@ if (window.location.href.endsWith("login.html")) {
 		const password = document.getElementById("password").value;
 
 		const lines = require("fs").readFileSync("psw.txt", "utf-8").split("\n");
-		const validCredentials = lines.some(line => {
-			const [user, pass] = line.split(',');
-			return user === username && pass === password;
+		const validCredentials = lines.some((line) => {
+			const [user, pass] = line.split(",");
+			return user === username && decryptPassword(pass) === password;
 		});
 
 		if (validCredentials) {
@@ -89,3 +89,29 @@ logoutbutton.addEventListener("click", () => {
 loginButton.addEventListener("click", () => {
 	window.location.href = "login.html";
 });
+
+//functie om wachtwoord te encrypteren
+function encryptPassword(password) {
+	const encoder = new TextEncoder();
+	const data = encoder.encode(password);
+	return crypto.subtle.digest("SHA-256", data).then((arrayBuffer) => {
+		const hashArray = Array.from(new Uint8Array(arrayBuffer));
+		const hashHex = hashArray
+			.map((b) => b.toString(16).padStart(2, "0"))
+			.join("");
+		return hashHex;
+	});
+}
+
+// functie om de wachtwoord te decrypten
+function decryptPassword(password) {
+	const encoder = new TextEncoder();
+	const data = encoder.encode(password);
+	return crypto.subtle.digest("SHA-256", data).then((arrayBuffer) => {
+		const hashArray = Array.from(new Uint8Array(arrayBuffer));
+		const hashHex = hashArray
+			.map((b) => b.toString(16).padStart(2, "0"))
+			.join("");
+		return hashHex;
+	});
+}
