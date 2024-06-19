@@ -25,6 +25,9 @@ https://www.youtube.com/watch?v=X4MtBe5WHWo&t=215s
 event calendar
 https://www.youtube.com/watch?v=vNS6ghNsg3c&t=608s
 
+
+
+
 ## structure
 
 index.html -> html code
@@ -60,3 +63,4 @@ The four emails of the core group of the organisation which can be clicked to se
 ## animation
 
 The rectangles around the photos are animated so they contour the picture while moving.
+
