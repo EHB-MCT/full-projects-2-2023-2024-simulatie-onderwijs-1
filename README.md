@@ -35,8 +35,6 @@ https://gemini.google.com/app/0eeb47c889aa94b2
 
 copilot
 
-
-
 ## structure
 
 index.html -> html code
@@ -72,4 +70,3 @@ The four emails of the core group of the organisation which can be clicked to se
 ## animation
 
 The rectangles around the photos are animated so they contour the picture while moving.
-
