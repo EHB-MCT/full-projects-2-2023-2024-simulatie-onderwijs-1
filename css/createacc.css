@@ -22,6 +22,7 @@ form {
 
 h1 {
 	margin-bottom: 5%;
+	font-size: 30px;
 }
 
 form input {
@@ -48,10 +49,10 @@ form input {
 }
 
 .line {
-	margin-left: 10%;
-	margin-top: -2%;
+	margin-left: 25%;
+	margin-top: -3%;
 	margin-bottom: 5%;
-	width: 80%;
+	width: 50%;
 }
 
 .arrow {

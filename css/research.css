@@ -31,13 +31,16 @@
 .page-wrapper {
 	margin: 0 10%;
 }
+.page-wrapper > h1 {
+	margin-left: 40%;
+	margin-right: 40%;
+}
 
 .research-header {
 	text-align: center;
 	padding-bottom: 0px; /* reduced padding from 10px to 5px */
 	margin-bottom: 0px; /* reduced margin from 20px to 15px */
 	width: 20%;
-	margin: 0 auto;
 	margin-top: 3%;
 	display: block;
 	position: relative;
@@ -46,7 +49,7 @@
 
 .line {
 	margin-left: 40%;
-	width: 20%;
+	width: 22%;
 }
 
 .research-item {
