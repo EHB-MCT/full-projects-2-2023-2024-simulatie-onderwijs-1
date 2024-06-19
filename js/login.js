@@ -39,8 +39,7 @@ if (window.location.href.endsWith("login.html")) {
 			loggedIn = "false";
 			// Voorkom dat het formulier wordt verzonden
 			event.preventDefault();
-			errorMessage.textContent =
-				"Vul a.u.b. de juiste gebruikersnaam en wachtwoord in.";
+			errorMessage.textContent = "Please enter the correct username and password.";
 			console.log("Inloggen mislukt");
 		}
 	});
@@ -65,10 +64,7 @@ window.onload = function () {
 		logoutbutton.style.display = "none";
 	}
 	//indien gebruiker zich op de pagina research of forum zit en niet ingelogt is, ga naar inlogpagina
-	if (
-		window.location.href.endsWith("research.html") ||
-		window.location.href.endsWith("tips-en-tricks.html")
-	) {
+	if (window.location.href.endsWith("research.html") || window.location.href.endsWith("tips-en-tricks.html")) {
 		if (loggedIn !== "true") {
 			window.location.href = "login.html";
 		}
@@ -90,9 +86,7 @@ function encryptPassword(password) {
 	const data = encoder.encode(password);
 	return crypto.subtle.digest("SHA-256", data).then((arrayBuffer) => {
 		const hashArray = Array.from(new Uint8Array(arrayBuffer));
-		const hashHex = hashArray
-			.map((b) => b.toString(16).padStart(2, "0"))
-			.join("");
+		const hashHex = hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
 		return hashHex;
 	});
 }
@@ -103,9 +97,7 @@ function decryptPassword(password) {
 	const data = encoder.encode(password);
 	return crypto.subtle.digest("SHA-256", data).then((arrayBuffer) => {
 		const hashArray = Array.from(new Uint8Array(arrayBuffer));
-		const hashHex = hashArray
-			.map((b) => b.toString(16).padStart(2, "0"))
-			.join("");
+		const hashHex = hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
 		return hashHex;
 	});
 }
