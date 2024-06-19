@@ -138,6 +138,9 @@ p {
 }
 /* Media queries for responsive navigation */
 @media (max-width: 768px) {
+	.logo {
+		display: none;
+	}
 	.navbar ul {
 		flex-direction: column;
 	}
@@ -153,6 +156,10 @@ p {
 	}
 	nav ul li a {
 		font-size: 1.2em;
+	}
+
+	.login-button {
+		margin-right: 7%;
 	}
 }
 
@@ -218,6 +225,8 @@ p {
 	border: none;
 	background-color: #f2eeed;
 	color: #333;
+	position: fixed;
+	margin-right: 3%;
 }
 
 .navbar-toggle.active {
