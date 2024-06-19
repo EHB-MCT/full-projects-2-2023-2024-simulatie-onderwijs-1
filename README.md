@@ -25,6 +25,15 @@ https://www.youtube.com/watch?v=X4MtBe5WHWo&t=215s
 event calendar
 https://www.youtube.com/watch?v=vNS6ghNsg3c&t=608s
 
+Codeium: AI Coding Autocomplete
+
+gemini
+https://gemini.google.com/app/bd2f5343bbbbae53
+https://gemini.google.com/app/a736d34ecbc6bf55
+https://gemini.google.com/app/9c01e2b2995abf4d
+https://gemini.google.com/app/0eeb47c889aa94b2
+
+copilot
 
 
 
