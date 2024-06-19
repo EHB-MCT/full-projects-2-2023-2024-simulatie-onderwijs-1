@@ -44,18 +44,7 @@ fetch(apiUrl)
 	.then((response) => response.json())
 	.then((json) => {
 		json.records.forEach((json) => {
-			data.push(
-				new Research(
-					json.title,
-					json.image,
-					json.date,
-					json.content,
-					json.link,
-					json.author,
-					json.tags,
-					json.modified
-				)
-			);
+			data.push(new Research(json.title, json.image, json.date, json.content, json.link, json.author, json.tags, json.modified));
 		});
 	})
 	.catch((error) => console.log(error));
@@ -89,6 +78,3 @@ export const Title = response.Title;
 
 //create response.modified
 export const Modified = response.Modified;
-
-//create response.author
-export const Author = response.Author;
