@@ -444,7 +444,7 @@ h2 {
 	}
 }
 .photo-container-blue::after {
-	background-color: #81c0c5;
+	background-color: #00828f;
 }
 
 .flex-item {
@@ -482,7 +482,7 @@ h2 {
 .line-education {
 	width: 70%;
 	height: 2px;
-	background-color: #81c0c5;
+	background-color: #00828f;
 	position: relative;
 	left: 60px;
 	top: -35px;
