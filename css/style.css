@@ -312,7 +312,9 @@ h2 {
 
 .test-para {
 	margin: 10px;
-	width: 630px;
+
+	max-width: 630px;
+	min-width: auto;
 	height: auto;
 	padding: 10px;
 	transform: skewx(-15deg);
@@ -565,12 +567,20 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logo_items {
