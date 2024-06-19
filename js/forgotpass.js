@@ -12,9 +12,9 @@ function sendOTP() {
 	let emailbody = `<h2>Your code is ${otp_val}</h2>`;
 
 	Email.send({
-		SecureToken: "dcced8fb-76c1-43e8-9fa1-9cfc79ef4907",
-		To: email, //dont get the code in mailbox (doesn't send a mail)
-		From: "meredith.lauwerens@student.ehb.be",
+		SecureToken: "0b764611-6519-4456-9031-ef7955b26e37",
+		To: email,
+		From: "meredith.lauwerens@gmail.com",
 		Subject: "Verification code",
 		Body: emailbody,
 	})
