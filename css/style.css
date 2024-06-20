@@ -761,6 +761,12 @@ footer {
 	transform: skewX(-80deg);
 }
 
+@media (max-width: 600px) {
+	.line-tips {
+		width: 150%;
+	}
+}
+
 .line-faq {
 	width: 10%;
 	height: 4px;
@@ -768,6 +774,12 @@ footer {
 	margin-bottom: 25px;
 	margin-top: 0px;
 	transform: skewX(-80deg);
+}
+
+@media (max-width: 600px) {
+	.line-faq {
+		width: 30%;
+	}
 }
 
 .reply-button {
