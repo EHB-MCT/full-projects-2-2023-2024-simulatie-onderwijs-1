@@ -576,12 +576,20 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logo_items {
@@ -608,6 +616,13 @@ footer {
 	justify-content: center;
 	gap: 20px;
 	font-family: "Noto Sans", sans-serif;
+}
+@media (max-width: 600px) {
+	#footer-nav ul {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 #footer-nav ul li a {
