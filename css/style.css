@@ -167,6 +167,9 @@ p {
 	.login-button {
 		margin-right: 7%;
 	}
+	.login-button:hover {
+		margin-right: 7%;
+	}
 }
 
 @media (max-width: 480px) {
