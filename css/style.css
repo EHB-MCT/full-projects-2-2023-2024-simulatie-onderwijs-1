@@ -282,12 +282,13 @@ p {
 	padding-top: 0px;
 	align-items: center;
 	margin-bottom: 225px;
+	padding-left: 15%;
 }
+
 
 .contact-info {
 	text-align: left;
 	width: 50%;
-	padding-left: 300px;
 }
 
 .phone {
@@ -379,6 +380,7 @@ h2 {
 	padding: 10px;
 	height: auto;
 	min-width: 500px;
+	transition: transform 0.3s; /* Add a smooth transition effect */
 }
 .photo-container::after {
 	content: "";
@@ -762,6 +764,12 @@ footer {
 	margin-left: 92%;
 	width: 8%;
 }
+@media (max-width: 600px) {
+	.reply-button {
+		margin-left: 85%;
+		width: 17%;
+	}
+}
 .reply-button:hover {
 	margin-left: 92%;
 	width: 8%;
@@ -846,3 +854,73 @@ footer {
 #loggingout {
 	display: none;
 }
+/*Responsive contact*/
+ 
+
+@media (max-width: 1025px) {
+	.contact-flex {
+		display: flex;
+		padding-top: 0px;
+		align-items: center;
+		margin-bottom: 225px;
+		flex-direction: column; 
+		
+	}
+	.photo-container {
+		transform: scale(0.9); /* Scale the container down to 90% of its original size */
+			
+}
+}
+@media (max-width: 768px) {
+	.contact-flex {
+		display: flex;
+		padding-top: 0px;
+		align-items: center;
+		margin-bottom: 225px;
+		flex-direction: column;
+		padding-left: 0%;
+	
+	}
+	.photo-container {
+		transform: scale(0.8); /* Scale the container down to 80% of its original size */
+			
+}
+	  
+	
+}
+
+@media (max-width: 480px) {
+	.contact-flex {
+		display: flex;
+		padding-top: 0px;
+		align-items: center;
+		margin-bottom: 225px;
+		flex-direction: column;
+		padding-left: 0px;
+		
+
+		
+	}
+	.photo-container {
+		transform: scale(0.6); /* Scale the container down to 60% of its original size */
+	  }
+
+
+}
+
+@media (max-width: 320px) {
+	.contact-flex {
+		display: flex;
+		padding-top: 0px;
+		align-items: center;
+		margin-bottom: 225px;
+		flex-direction: column;
+		padding-left: 0px;
+		
+	}
+	.photo-container {
+		transform: scale(0.4); /* Scale the container down to 60% of its original size */
+	  }
+}
+
+
