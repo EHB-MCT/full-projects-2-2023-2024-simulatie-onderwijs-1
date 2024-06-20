@@ -879,6 +879,7 @@ footer {
 		transform: scale(0.8); /* Scale the container down to 80% of its original size */
 			
 }
+
 	  
 	
 }
@@ -898,7 +899,9 @@ footer {
 	.photo-container {
 		transform: scale(0.6); /* Scale the container down to 60% of its original size */
 	  }
-
+	  .email{
+		margin-left: -25%;
+	  }
 
 }
 
@@ -913,7 +916,11 @@ footer {
 		
 	}
 	.photo-container {
-		transform: scale(0.4); /* Scale the container down to 60% of its original size */
+		transform:
+		 scale(0.4); /* Scale the container down to 60% of its original size */
+	  }
+	  .email{
+		margin-left: -35%;
 	  }
 }
 
