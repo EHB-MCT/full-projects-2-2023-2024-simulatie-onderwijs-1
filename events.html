@@ -4,14 +4,13 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Events for simulation healthcare network." />
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/events_calendar.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/evo-calendar.css" />
+	<script src="js/Nav.js"></script>
+	<link rel="icon" type="image/png" href="img/Middel 3.png" />
 </head>
-<link href="css/reset.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
-<link href="css/events_calendar.css" rel="stylesheet" />
-<link rel="stylesheet" href="css/evo-calendar.css" />
-<script src="js/Nav.js"></script>
-<link rel="icon" type="image/png" href="img/Middel 3.png" />
-
 <body>
 	<header>
 		<div class="logo">
@@ -34,69 +33,38 @@
 		</button>
 		<button type="button" id="loggingout" class="login-button">LOG UIT</button>
 	</header>
-
-	<div class="title">
-		<h1>EVENTS</h1>
-		<div class="line"></div>
-	</div>
-
-	<div class="events">
-		<div id="calendar"></div>
-
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-		<script src="js/evo-calendar.min.js"></script>
-		<script>
-			$(document).ready(function () {
-				$("#calendar").evoCalendar({
-					theme: "Default",
-					calendarEvents: [
-						{
-							id: "congres", // Event's ID (required)
-							name: "Congres", // Event name (required)
-							date: ["May/14/2025", "May/15/2025"], // Event date (required)
-							description: "Combination of plenary sessions and workshops aimed at education and the field of healthcare.",
-							type: "event", // Event type (required)
-							everyYear: false, // Same event every year (optional)
-						},
-					],
-				});
-			});
-		</script>
-	</div>
-
-	<div class="sec-title">
-		<h2>PHOTOGALLERY: TRAININGS</h2>
-		<div class="line-2"></div>
-	</div>
-
-	<script src="js/event-carousel.js"></script>
-
-	<div id="carousel">
-		<div id="carousel-1">
-			<div class="slider">
-				<img src="img/bevalling.png" alt="birth" />
-				<img src="img/bevalling 2.png" alt="birth" />
-			</div>
+	<div class="flex-container">
+		<div class="title">
+			<h1>EVENTS</h1>
+			<div class="line"></div>
 		</div>
-
-		<!--goed verschil tussen classes en IDs behouden
-		id is voor eenmalig gebruik, classes voor meerdere gebruiken-->
-		<div id="carousel-2">
-			<div class="slider">
-				<img src="img/cpr.png" alt="cpr" />
-				<img src="img/cpr 2.png" alt="cpr" />
-			</div>
+		<iframe title="calendar" src="calendar.html" style="border: 0" width="100%" height="100%" allowscrolling="no"></iframe>
+		<div class="sec-title">
+			<h2>PHOTOGALLERY: TRAININGS</h2>
+			<div class="line"></div>
 		</div>
-		<div id="carousel-3">
-			<div class="slider">
-				<img src="img/immersive.png" alt="immersive" />
-				<img src="img/immersive 2.png" alt="immersive" />
+		<div id="carousel">
+			<div id="carousel-1">
+				<div class="slider">
+					<img src="img/bevalling.png" alt="birth" />
+					<img src="img/bevalling 2.png" alt="birth" />
+				</div>
 			</div>
+			<div id="carousel-2">
+				<div class="slider">
+					<img src="img/cpr.png" alt="cpr" />
+					<img src="img/cpr 2.png" alt="cpr" />
+				</div>
+			</div>
+			<div id="carousel-3">
+				<div class="slider">
+					<img src="img/immersive.png" alt="immersive" />
+					<img src="img/immersive 2.png" alt="immersive" />
+				</div>
+			</div>		
 		</div>
+		<div class="para-carousel"></div>
 	</div>
-
-	<div class="para-carousel"></div>
-
 	<div id="footer-line-1" class="footer-lines"></div>
 	<div id="footer-line-2" class="footer-lines"></div>
 	<div id="footer-line-3" class="footer-lines"></div>
@@ -152,5 +120,6 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/login.js"></script>
+	<script src="js/event-carousel.js"></script>
 </body>
 </html>

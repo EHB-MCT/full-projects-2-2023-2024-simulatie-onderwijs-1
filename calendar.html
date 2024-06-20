@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calendar</title>
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/events_calendar.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/evo-calendar.css" />
+		<script src="js/Nav.js"></script>
+		<link rel="icon" type="image/png" href="img/Middel 3.png" />
+	</head>
+	<body>
+		<div class="events">
+			<div id="calendar"></div>
+
+			<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+			<script src="js/evo-calendar.min.js"></script>
+			<script>
+				$(document).ready(function () {
+					$("#calendar").evoCalendar({
+						theme: "Default",
+						calendarEvents: [
+							{
+								id: "congres", // Event's ID (required)
+								name: "Congres", // Event name (required)
+								date: ["May/14/2025", "May/15/2025"], // Event date (required)
+								description:
+									"Combination of plenary sessions and workshops aimed at education and the field of healthcare.",
+								type: "event", // Event type (required)
+								everyYear: false, // Same event every year (optional)
+							},
+						],
+					});
+				});
+			</script>
+		</div>
+	</body>
+</html>
