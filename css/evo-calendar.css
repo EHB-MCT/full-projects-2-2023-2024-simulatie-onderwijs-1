@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-/*no events for the day VERANDEREN TEKST*/
-
 *,
 ::after,
 ::before {
@@ -84,6 +82,7 @@ button:focus {
 	margin: 0;
 	font-size: 30px;
 	display: inline-block;
+	color: #fff;
 }
 .calendar-sidebar > .calendar-year > button.icon-button {
 	display: inline-block;
