@@ -230,7 +230,7 @@ p {
 	border: none;
 	background-color: #f2eeed;
 	color: #333;
-	position: fixed;
+	position: absolute;
 	margin-right: 3%;
 }
 
@@ -587,12 +587,20 @@ footer {
 
 .logos:before {
 	left: 0;
-	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logos:after {
 	right: 0;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgb(255, 255, 255)
+	);
 }
 
 .logo_items {
@@ -773,6 +781,13 @@ footer {
 	margin-left: 92%;
 	width: 8%;
 }
+
+@media (max-width: 600px) {
+	.reply-button:hover {
+		margin-left: 85%;
+		width: 17%;
+	}
+}
 .conversation-box {
 	width: 90%;
 	background-color: #f2f2f2;
@@ -864,7 +879,9 @@ footer {
 		flex-direction: column;
 	}
 	.photo-container {
-		transform: scale(0.9); /* Scale the container down to 90% of its original size */
+		transform: scale(
+			0.9
+		); /* Scale the container down to 90% of its original size */
 	}
 }
 @media (max-width: 768px) {
@@ -878,7 +895,9 @@ footer {
 		padding-left: 0%;
 	}
 	.photo-container {
-		transform: scale(0.8); /* Scale the container down to 80% of its original size */
+		transform: scale(
+			0.8
+		); /* Scale the container down to 80% of its original size */
 	}
 }
 
@@ -892,7 +911,9 @@ footer {
 		padding-left: 0px;
 	}
 	.photo-container {
-		transform: scale(0.6); /* Scale the container down to 60% of its original size */
+		transform: scale(
+			0.6
+		); /* Scale the container down to 60% of its original size */
 	}
 	.email {
 		margin-left: -25%;
@@ -909,7 +930,9 @@ footer {
 		padding-left: 0px;
 	}
 	.photo-container {
-		transform: scale(0.4); /* Scale the container down to 60% of its original size */
+		transform: scale(
+			0.4
+		); /* Scale the container down to 60% of its original size */
 	}
 	.email {
 		margin-left: -35%;
