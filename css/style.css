@@ -144,8 +144,12 @@ p {
 }
 /* Media queries for responsive navigation */
 @media (max-width: 768px) {
-	.logo {
-		display: none;
+	.logo img {
+		height: 90px;
+		width: 150px;
+		position: absolute;
+		top: 5px;
+		left: 5px;
 	}
 	.navbar ul {
 		flex-direction: column;
@@ -951,6 +955,12 @@ footer {
 	}
 	.email {
 		margin-left: -35%;
+	}
+}
+
+@media (max-width: 600px) {
+	.line-contact {
+		width: 250px;
 	}
 }
 
