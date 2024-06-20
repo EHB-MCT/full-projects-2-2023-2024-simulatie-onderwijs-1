@@ -77,3 +77,5 @@ https://gemini.google.com/app/9c01e2b2995abf4d
 https://gemini.google.com/app/0eeb47c889aa94b2
 
 copilot
+https://copilot.microsoft.com/sl/hYTC0fdXiCq
+https://copilot.microsoft.com/sl/jZ1QmQCDne8
