@@ -8,13 +8,13 @@ const errorMessage = document.getElementById("error-message");
 const cookieConsent = document.querySelector(".cookie-consent");
 
 // De "Inloggen" knop
-const loginButton = document.getElementById("inloggen");
+const loginButton = document.getElementById("loggingin");
 
 // Controleer of de gebruiker is ingelogd
 let loggedIn = localStorage.getItem("loggedIn");
 
 // De "Uitloggen" knop
-const logoutbutton = document.getElementById("uitloggen");
+const logoutbutton = document.getElementById("loggingout");
 
 // Controleer of de gebruiker op de pagina is die inloggen vereist
 if (window.location.href.endsWith("login.html")) {
