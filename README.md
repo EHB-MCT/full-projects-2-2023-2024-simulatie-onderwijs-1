@@ -13,6 +13,9 @@ Third week: The coding went further on with extra features like a chat forum and
 carousel footer logo's
 https://codepen.io/Navneet-Dwivedi/pen/LYXbvVL
 
+contact page: link email so that when you click on it your mailbox opens
+https://www.shecodes.io/athena/63954-how-to-link-an-email-in-html#:~:text=To%20create%20an%20email%20link%20in%20HTML%2C%20you%20can%20use,to%20the%20specified%20email%20address.
+
 email sending a code to change password
 https://www.youtube.com/watch?v=uqTNK57HDPs
 
@@ -34,8 +37,6 @@ https://gemini.google.com/app/9c01e2b2995abf4d
 https://gemini.google.com/app/0eeb47c889aa94b2
 
 copilot
-
-
 
 ## structure
 
@@ -72,4 +73,3 @@ The four emails of the core group of the organisation which can be clicked to se
 ## animation
 
 The rectangles around the photos are animated so they contour the picture while moving.
-
