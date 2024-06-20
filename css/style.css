@@ -765,6 +765,12 @@ footer {
 	margin-left: 92%;
 	width: 8%;
 }
+@media (max-width: 600px) {
+	.reply-button {
+		margin-left: 85%;
+		width: 17%;
+	}
+}
 .reply-button:hover {
 	margin-left: 92%;
 	width: 8%;
