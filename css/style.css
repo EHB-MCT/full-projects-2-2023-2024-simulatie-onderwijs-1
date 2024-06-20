@@ -337,6 +337,11 @@ h2 {
 	position: relative;
 	top: -130px;
 }
+@media (max-width: 600px) {
+	.test-para {
+		margin: 60px 40px 40px 40px; /* top right bottom left */
+	}
+}
 .test-para > p {
 	margin: 15px;
 	margin-top: 10px;
